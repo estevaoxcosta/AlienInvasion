@@ -39,8 +39,8 @@ var startGame = function() {
     Game.setBoard(1,new Starfield(50,0.6,100));
     Game.setBoard(2,new Starfield(100,1.0,50));
   }  
-  Game.setBoard(3,new TitleScreen("Alien Invasion", 
-                                  "Press fire to start playing",
+  Game.setBoard(3,new TitleScreen("Maailma kummutised", 
+                                  "Mängimise alustamiseks vajutage tulekahju",
                                   playGame));
 };
 
@@ -73,8 +73,8 @@ var winGame = function() {
 };
 
 var loseGame = function() {
-  Game.setBoard(3,new TitleScreen("You lose!", 
-                                  "Press fire to play again",
+  Game.setBoard(3,new TitleScreen("Sa kaotasid!", 
+                                  "Vajutage tühik,et mängida uuesti",
                                   playGame));
 };
 
