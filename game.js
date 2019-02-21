@@ -67,14 +67,14 @@ var playGame = function() {
 };
 
 var winGame = function() {
-  Game.setBoard(3,new TitleScreen("You win!", 
-                                  "Press fire to play again",
+  Game.setBoard(3,new TitleScreen("sa võitsid!", 
+                                "vajutage tühik, et mängida uuesti",
                                   playGame));
 };
 
 var loseGame = function() {
   Game.setBoard(3,new TitleScreen("Sa kaotasid!", 
-                                  "Vajutage tühik,et mängida uuesti",
+                                  "Vajutage tühik, et mängida uuesti",
                                   playGame));
 };
 
